@@ -38,11 +38,10 @@ export default function Home() {
         html { scroll-behavior: smooth; }
         body { font-family: 'DM Sans', sans-serif; color: #1E2D3D; background: #fff; }
         nav {
-          position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+          position: relative;
           display: flex; align-items: center; justify-content: space-between;
-          padding: 18px 48px;
-          background: rgba(15,35,60,0.92);
-          backdrop-filter: blur(12px);
+          padding: 16px 48px;
+          background: #0F1E30;
           border-bottom: 1px solid rgba(255,255,255,0.08);
         }
         .nav-logo { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; color: #fff; letter-spacing: 0.01em; }
@@ -53,17 +52,38 @@ export default function Home() {
         .nav-cta { background: #C8A84B; color: #fff; border: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase; font-family: 'DM Sans', sans-serif; transition: background 0.2s; }
         .nav-cta:hover { background: #b5933c; }
         .logo-banner {
-          background: #FAF7F2;
+          background: #0F1E30;
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 40px 20px;
-          border-bottom: 1px solid rgba(74,144,217,0.1);
+          gap: 48px;
+          padding: 48px 60px;
+          border-bottom: 2px solid rgba(200,168,75,0.3);
         }
         .logo-banner-img {
-          width: 280px;
-          height: 280px;
+          width: 260px;
+          height: 260px;
           object-fit: contain;
+          flex-shrink: 0;
+        }
+        .logo-quote {
+          flex: 1;
+          max-width: 260px;
+          font-family: 'Playfair Display', serif;
+          font-size: 17px;
+          font-style: italic;
+          color: rgba(255,255,255,0.75);
+          line-height: 1.7;
+          text-align: center;
+        }
+        .logo-quote span {
+          display: block;
+          font-size: 12px;
+          font-style: normal;
+          color: #C8A84B;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          margin-top: 10px;
         }
         .hero { position: relative; height: 100vh; min-height: 700px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
         .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center center; filter: brightness(0.55); }
@@ -175,7 +195,15 @@ export default function Home() {
       </nav>
 
       <div className="logo-banner">
+        <div className="logo-quote">
+          "Not all those who wander are lost."
+          <span>— J.R.R. Tolkien</span>
+        </div>
         <img src="/photos/logo.png" alt="The Roaming Lamb Travel Co." className="logo-banner-img" />
+        <div className="logo-quote">
+          "The world is a book, and those who do not travel read only one page."
+          <span>— Saint Augustine</span>
+        </div>
       </div>
       <div className="hero">
         <div className="hero-bg" />
