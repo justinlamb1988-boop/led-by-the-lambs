@@ -1,4 +1,4 @@
-# Led by the Lambs — Travel Planning App
+# The Roaming Lamb Travel Co. — Travel Planning App
 
 A full-stack travel planning CRM for Justin & Casondra Lamb, built with Next.js and deployed on Vercel.
 
@@ -23,20 +23,20 @@ A full-stack travel planning CRM for Justin & Casondra Lamb, built with Next.js 
 4. Copy it — you'll need it in Step 4
 
 ### Step 2 — Push to GitHub
-1. Create a new repo at [github.com/new](https://github.com/new) — name it `led-by-the-lambs`
+1. Create a new repo at [github.com/new](https://github.com/new) — name it `the-roaming-lamb`
 2. In this project folder, run:
    ```
    git init
    git add .
    git commit -m "Initial commit"
-   git remote add origin https://github.com/YOUR_USERNAME/led-by-the-lambs.git
+   git remote add origin https://github.com/YOUR_USERNAME/the-roaming-lamb.git
    git push -u origin main
    ```
 
 ### Step 3 — Deploy on Vercel
 1. Go to [vercel.com](https://vercel.com) and sign up (free) with your GitHub account
 2. Click **Add New → Project**
-3. Import your `led-by-the-lambs` repo
+3. Import your `the-roaming-lamb` repo
 4. Click **Deploy** — Vercel auto-detects Next.js, no config needed
 
 ### Step 4 — Add your API key
@@ -48,7 +48,7 @@ A full-stack travel planning CRM for Justin & Casondra Lamb, built with Next.js 
 4. Go to **Deployments** and click **Redeploy** to pick up the new env var
 
 ### Step 5 — Done!
-Your app is live at `https://led-by-the-lambs.vercel.app` (or similar). Share that URL with no one — it's your admin tool.
+Your app is live at `https://the-roaming-lamb.vercel.app` (or similar). Share that URL with no one — it's your admin tool.
 
 ---
 
@@ -73,7 +73,7 @@ Open [http://localhost:3000](http://localhost:3000)
 ## 📁 Project Structure
 
 ```
-led-by-the-lambs/
+the-roaming-lamb/
 ├── app/
 │   ├── api/
 │   │   └── ai/

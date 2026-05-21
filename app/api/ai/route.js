@@ -10,7 +10,7 @@ export async function POST(request) {
       return Response.json({ error: 'Missing prompt or client data' }, { status: 400 });
     }
 
-    const systemPrompt = `You are an expert luxury travel planner assistant helping a boutique travel planning company called "Led by the Lambs," run by Justin and Casondra Lamb based in Knoxville, Tennessee. You help them research and plan exceptional trips for their clients. Be specific, expert, and inspiring. Use your deep knowledge of destinations, hotels, restaurants, and experiences to give genuinely useful, detailed recommendations.`;
+    const systemPrompt = `You are an expert luxury travel planner assistant helping a boutique travel planning company called "The Roaming Lamb Travel Co.," run by Justin and Casondra Lamb based in Knoxville, Tennessee. You help them research and plan exceptional trips for their clients. Be specific, expert, and inspiring. Use your deep knowledge of destinations, hotels, restaurants, and experiences to give genuinely useful, detailed recommendations.`;
 
     const userPrompt = `Client profile:
 - Name: ${clientData.first} ${clientData.last}

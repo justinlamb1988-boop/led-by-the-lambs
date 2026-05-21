@@ -149,7 +149,7 @@ export default function Home() {
       `}</style>
 
       <nav>
-        <div className="nav-logo">Led by the <span>Lambs</span></div>
+        <div className="nav-logo">The Roaming <span>Lamb</span></div>
         <div className="nav-links">
           <a onClick={() => scrollTo('about')}>About</a>
           <a onClick={() => scrollTo('destinations')}>Destinations</a>
@@ -218,7 +218,7 @@ export default function Home() {
 
       <section id="why" style={{background:'#fff'}}>
         <div style={{textAlign:'center', marginBottom:64}}>
-          <div className="section-eyebrow">Why Led by the Lambs</div>
+          <div className="section-eyebrow">Why The Roaming Lamb</div>
           <h2 className="section-title">Travel Planning That's<br /><em>Actually Personal</em></h2>
           <div className="divider" style={{margin:'24px auto 0'}} />
         </div>
@@ -247,7 +247,7 @@ export default function Home() {
           <img src="/photos/hero.jpg" alt="Justin and Casondra in Rome" className="lifestyle-img" />
           <div className="lifestyle-text">
             <div className="quote">"The world is a book, and those who do not travel read only one page."</div>
-            <p>We started Led by the Lambs because we kept hearing the same thing from friends and family: "I want to travel more, I just don't know where to start."</p>
+            <p>We started The Roaming Lamb Travel Co. because we kept hearing the same thing from friends and family: "I want to travel more, I just don't know where to start."</p>
             <p>Planning a great trip takes dozens of hours of research, dozens of browser tabs, and a lot of second-guessing. We do all of that for you — drawing on our own real experiences to cut through the noise and find the experiences worth having.</p>
             <p>Whether it's your first trip abroad or your fiftieth, we'll make sure it's one you'll never forget.</p>
             <button className="btn-gold" style={{marginTop:24}} onClick={() => scrollTo('contact')}>Let's Plan Your Trip →</button>
@@ -294,15 +294,15 @@ export default function Home() {
 
       <footer>
         <div>
-          <div className="footer-logo">Led by the <span>Lambs</span></div>
-          <div className="footer-tagline">Your dream adventure awaits.</div>
+          <div className="footer-logo">The Roaming <span>Lamb</span></div>
+          <div className="footer-tagline">It's about Lamb time.</div>
         </div>
         <div className="footer-links">
           <a onClick={() => scrollTo('about')}>About</a>
           <a onClick={() => scrollTo('destinations')}>Destinations</a>
           <a onClick={() => scrollTo('contact')}>Contact</a>
         </div>
-        <div className="footer-copy">© 2026 Led by the Lambs. All rights reserved.</div>
+        <div className="footer-copy">© 2026 The Roaming Lamb Travel Co. All rights reserved.</div>
       </footer>
     </>
   );

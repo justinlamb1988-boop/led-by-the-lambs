@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Led by the Lambs — Boutique Travel Planning',
-  description: 'Justin & Casondra Lamb plan extraordinary trips for adventurous travelers. Based in Knoxville, Tennessee. Your dream adventure awaits.',
+  title: 'The Roaming Lamb Travel Co. — Boutique Travel Planning',
+  description: 'Justin & Casondra Lamb plan extraordinary trips for adventurous travelers. Based in Knoxville, Tennessee. It's about Lamb time.',
 }
 
 export default function RootLayout({ children }) {
