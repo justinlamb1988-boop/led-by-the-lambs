@@ -45,15 +45,26 @@ export default function Home() {
           backdrop-filter: blur(12px);
           border-bottom: 1px solid rgba(255,255,255,0.08);
         }
-        .nav-logo { display: flex; align-items: center; gap: 14px; }
-        .nav-logo img { height: 90px; width: 90px; object-fit: contain; }
-        .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600; color: #fff; line-height: 1.3; }
-        .nav-logo-text span { color: #C8A84B; }
+        .nav-logo { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 600; color: #fff; letter-spacing: 0.01em; }
+        .nav-logo span { color: #C8A84B; }
         .nav-links { display: flex; gap: 32px; }
         .nav-links a { color: rgba(255,255,255,0.8); font-size: 13px; font-weight: 500; text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: color 0.2s; }
         .nav-links a:hover { color: #C8A84B; }
         .nav-cta { background: #C8A84B; color: #fff; border: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase; font-family: 'DM Sans', sans-serif; transition: background 0.2s; }
         .nav-cta:hover { background: #b5933c; }
+        .logo-banner {
+          background: #FAF7F2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 40px 20px;
+          border-bottom: 1px solid rgba(74,144,217,0.1);
+        }
+        .logo-banner-img {
+          width: 280px;
+          height: 280px;
+          object-fit: contain;
+        }
         .hero { position: relative; height: 100vh; min-height: 700px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
         .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center center; filter: brightness(0.55); }
         .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 24px; max-width: 820px; }
@@ -153,7 +164,7 @@ export default function Home() {
       `}</style>
 
       <nav>
-        <div className="nav-logo"><img src="/photos/logo-nav.png" alt="The Roaming Lamb Travel Co." /><div className="nav-logo-text">The Roaming <span>Lamb</span><br/>Travel Co.</div></div>
+        <div className="nav-logo">The Roaming <span>Lamb</span></div>
         <div className="nav-links">
           <a onClick={() => scrollTo('about')}>About</a>
           <a onClick={() => scrollTo('destinations')}>Destinations</a>
@@ -163,11 +174,13 @@ export default function Home() {
         <button className="nav-cta" onClick={() => scrollTo('contact')}>Plan My Trip</button>
       </nav>
 
+      <div className="logo-banner">
+        <img src="/photos/logo.png" alt="The Roaming Lamb Travel Co." className="logo-banner-img" />
+      </div>
       <div className="hero">
         <div className="hero-bg" />
         <div className="hero-content">
           <div className="hero-eyebrow">Boutique Travel Planning · Knoxville, Tennessee</div>
-          <img src="/photos/logo-nav.png" alt="The Roaming Lamb Travel Co." style={{width:'160px',height:'160px',objectFit:'contain',margin:'0 auto 24px',display:'block'}} />
           <h1 className="hero-title">Your Dream Adventure<br /><em>Awaits.</em></h1>
           <p className="hero-sub">We're Justin & Casondra Lamb — passionate travelers turned travel planners.<br />Let us craft the trip of a lifetime, so all you have to do is show up.</p>
           <div className="hero-btns">
