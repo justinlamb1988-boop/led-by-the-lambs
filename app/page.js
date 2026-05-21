@@ -45,8 +45,10 @@ export default function Home() {
           backdrop-filter: blur(12px);
           border-bottom: 1px solid rgba(255,255,255,0.08);
         }
-        .nav-logo { display: flex; align-items: center; }
-        .nav-logo img { height: 52px; width: 52px; object-fit: contain; border-radius: 50%; }
+        .nav-logo { display: flex; align-items: center; gap: 12px; }
+        .nav-logo img { height: 72px; width: 72px; object-fit: contain; }
+        .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; color: #fff; line-height: 1.2; }
+        .nav-logo-text span { color: #C8A84B; }
         .nav-links { display: flex; gap: 32px; }
         .nav-links a { color: rgba(255,255,255,0.8); font-size: 13px; font-weight: 500; text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: color 0.2s; }
         .nav-links a:hover { color: #C8A84B; }
@@ -151,7 +153,7 @@ export default function Home() {
       `}</style>
 
       <nav>
-        <div className="nav-logo"><img src="/photos/logo-nav.png" alt="The Roaming Lamb Travel Co." /></div>
+        <div className="nav-logo"><img src="/photos/logo-nav.png" alt="The Roaming Lamb Travel Co." /><div className="nav-logo-text">The Roaming <span>Lamb</span><br/>Travel Co.</div></div>
         <div className="nav-links">
           <a onClick={() => scrollTo('about')}>About</a>
           <a onClick={() => scrollTo('destinations')}>Destinations</a>
