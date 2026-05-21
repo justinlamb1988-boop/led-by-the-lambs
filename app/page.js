@@ -55,9 +55,9 @@ export default function Home() {
           background: #0F1E30;
           display: flex;
           align-items: center;
-          justify-content: center;
-          gap: 48px;
-          padding: 48px 60px;
+          justify-content: space-between;
+          gap: 24px;
+          padding: 48px 80px;
           border-bottom: 2px solid rgba(200,168,75,0.3);
         }
         .logo-banner-img {
@@ -68,7 +68,7 @@ export default function Home() {
         }
         .logo-quote {
           flex: 1;
-          max-width: 260px;
+          max-width: 320px;
           font-family: 'Playfair Display', serif;
           font-size: 17px;
           font-style: italic;
