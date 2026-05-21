@@ -45,9 +45,9 @@ export default function Home() {
           backdrop-filter: blur(12px);
           border-bottom: 1px solid rgba(255,255,255,0.08);
         }
-        .nav-logo { display: flex; align-items: center; gap: 12px; }
-        .nav-logo img { height: 72px; width: 72px; object-fit: contain; }
-        .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; color: #fff; line-height: 1.2; }
+        .nav-logo { display: flex; align-items: center; gap: 14px; }
+        .nav-logo img { height: 90px; width: 90px; object-fit: contain; }
+        .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600; color: #fff; line-height: 1.3; }
         .nav-logo-text span { color: #C8A84B; }
         .nav-links { display: flex; gap: 32px; }
         .nav-links a { color: rgba(255,255,255,0.8); font-size: 13px; font-weight: 500; text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: color 0.2s; }
@@ -55,7 +55,7 @@ export default function Home() {
         .nav-cta { background: #C8A84B; color: #fff; border: none; padding: 10px 24px; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase; font-family: 'DM Sans', sans-serif; transition: background 0.2s; }
         .nav-cta:hover { background: #b5933c; }
         .hero { position: relative; height: 100vh; min-height: 700px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-        .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center 30%; filter: brightness(0.55); }
+        .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center center; filter: brightness(0.55); }
         .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 24px; max-width: 820px; }
         .hero-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #C8A84B; margin-bottom: 20px; }
         .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(44px,7vw,80px); font-weight: 600; color: #fff; line-height: 1.1; margin-bottom: 24px; }
