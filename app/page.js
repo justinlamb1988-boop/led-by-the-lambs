@@ -167,6 +167,7 @@ export default function Home() {
         <div className="hero-bg" />
         <div className="hero-content">
           <div className="hero-eyebrow">Boutique Travel Planning · Knoxville, Tennessee</div>
+          <img src="/photos/logo-nav.png" alt="The Roaming Lamb Travel Co." style={{width:'160px',height:'160px',objectFit:'contain',margin:'0 auto 24px',display:'block'}} />
           <h1 className="hero-title">Your Dream Adventure<br /><em>Awaits.</em></h1>
           <p className="hero-sub">We're Justin & Casondra Lamb — passionate travelers turned travel planners.<br />Let us craft the trip of a lifetime, so all you have to do is show up.</p>
           <div className="hero-btns">
@@ -248,7 +249,7 @@ export default function Home() {
           <div className="divider" />
         </div>
         <div className="lifestyle-grid">
-          <img src="/photos/hero.jpg" alt="Justin and Casondra in Rome" className="lifestyle-img" />
+          <img src="/photos/rome_cafe.jpg" alt="Justin and Casondra in Rome" className="lifestyle-img" />
           <div className="lifestyle-text">
             <div className="quote">"The world is a book, and those who do not travel read only one page."</div>
             <p>We started The Roaming Lamb Travel Co. because we kept hearing the same thing from friends and family: "I want to travel more, I just don't know where to start."</p>
