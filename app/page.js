@@ -114,6 +114,17 @@ export default function Home() {
         .about-gold-box { background: #C8A84B; color: #fff; padding: 20px 28px; margin-top: 32px; border-radius: 2px; font-size: 15px; line-height: 1.6; font-style: italic; font-family: 'Playfair Display', serif; }
         .about-text p { font-size: 16px; line-height: 1.8; color: #4A5568; margin-bottom: 16px; }
         .about-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+        .photo-strip { display: flex; height: 320px; overflow: hidden; }
+        .photo-strip-item { flex: 1; overflow: hidden; position: relative; }
+        .photo-strip-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: brightness(0.85); }
+        .photo-strip-item:hover img { transform: scale(1.06); filter: brightness(1); }
+        .dest-grid { max-width: 1200px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .dest-card { position: relative; height: 340px; overflow: hidden; border-radius: 4px; cursor: pointer; }
+        .dest-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: brightness(0.75); }
+        .dest-card:hover img { transform: scale(1.06); filter: brightness(0.9); }
+        .dest-card-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 32px 24px 20px; background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%); }
+        .dest-card-title { font-family: 'Playfair Display', serif; font-size: 22px; color: #fff; font-weight: 500; }
+        .dest-card-sub { font-size: 12px; color: rgba(255,255,255,0.7); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
         .tag { background: #EEF7FF; color: #1A4F82; padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; }
         .gallery-section { background: #F8F6F1; }
         .gallery-header { max-width: 1200px; margin: 0 auto 48px; }
@@ -247,19 +258,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Photo Strip */}
+      <div className="photo-strip">
+        <div className="photo-strip-item"><img src="/photos/strip1.jpg" alt="Barcelona" /></div>
+        <div className="photo-strip-item"><img src="/photos/gallery1.jpg" alt="Caribbean" /></div>
+        <div className="photo-strip-item"><img src="/photos/strip2.jpg" alt="In flight" /></div>
+        <div className="photo-strip-item"><img src="/photos/strip3.jpg" alt="Sea lion encounter" /></div>
+        <div className="photo-strip-item"><img src="/photos/gallery5.jpg" alt="Rome" /></div>
+      </div>
+
       <section id="destinations" className="gallery-section">
         <div className="gallery-header">
           <div className="section-eyebrow">Where We've Been</div>
           <h2 className="section-title">The World Is Waiting.<br /><em>Where Will You Go?</em></h2>
           <div className="divider" />
         </div>
-        <div className="gallery-grid">
-          <div className="gallery-item tall"><img src="/photos/gallery1.jpg" alt="Caribbean Beach" /><div className="gallery-caption">Caribbean</div></div>
-          <div className="gallery-item"><img src="/photos/gallery2.jpg" alt="Tortola, British Virgin Islands" /><div className="gallery-caption">Tortola, BVI</div></div>
-          <div className="gallery-item"><img src="/photos/gallery3.jpg" alt="Dominican Republic" /><div className="gallery-caption">Dominican Republic</div></div>
-          <div className="gallery-item"><img src="/photos/gallery4.jpg" alt="Scottsdale, Arizona" /><div className="gallery-caption">Scottsdale, Arizona</div></div>
-          <div className="gallery-item"><img src="/photos/gallery5.jpg" alt="Rome, Italy" /><div className="gallery-caption">Rome, Italy</div></div>
-          <div className="gallery-item"><img src="/photos/gallery6.jpg" alt="St. Thomas, USVI" /><div className="gallery-caption">St. Thomas, USVI</div></div>
+        <div className="dest-grid">
+          <div className="dest-card"><img src="/photos/gallery5.jpg" alt="Rome, Italy" /><div className="dest-card-label"><div className="dest-card-title">Rome & the Vatican</div><div className="dest-card-sub">Italy</div></div></div>
+          <div className="dest-card"><img src="/photos/gallery1.jpg" alt="Caribbean" /><div className="dest-card-label"><div className="dest-card-title">Caribbean Islands</div><div className="dest-card-sub">BVI · USVI · Dominican Republic</div></div></div>
+          <div className="dest-card"><img src="/photos/gallery4.jpg" alt="Scottsdale, Arizona" /><div className="dest-card-label"><div className="dest-card-title">Scottsdale</div><div className="dest-card-sub">Arizona</div></div></div>
+          <div className="dest-card"><img src="/photos/dest-nyc.jpg" alt="New York City" /><div className="dest-card-label"><div className="dest-card-title">New York City</div><div className="dest-card-sub">New York</div></div></div>
+          <div className="dest-card"><img src="/photos/dest-derby.jpg" alt="Kentucky Derby" /><div className="dest-card-label"><div className="dest-card-title">Kentucky Derby</div><div className="dest-card-sub">Louisville, Kentucky</div></div></div>
+          <div className="dest-card"><img src="/photos/dest-philly.jpg" alt="Philadelphia" /><div className="dest-card-label"><div className="dest-card-title">Philadelphia</div><div className="dest-card-sub">Pennsylvania</div></div></div>
         </div>
       </section>
 
