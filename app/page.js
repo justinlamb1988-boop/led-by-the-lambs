@@ -208,7 +208,7 @@ export default function Home() {
       <div className="hero">
         <div className="hero-bg" />
         <div className="hero-content">
-          <div className="hero-eyebrow">Boutique Travel Planning · Knoxville, Tennessee</div>
+          <div className="hero-eyebrow">Personalized Travel Planning</div>
           <h1 className="hero-title">Your Dream Adventure<br /><em>Awaits.</em></h1>
           <p className="hero-sub">We're Justin & Casondra Lamb — passionate travelers turned travel planners.<br />Let us craft the trip of a lifetime, so all you have to do is show up.</p>
           <div className="hero-btns">
