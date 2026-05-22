@@ -117,7 +117,7 @@ export default function Home() {
         .tag { background: #EEF7FF; color: #1A4F82; padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; }
         .gallery-section { background: #F8F6F1; }
         .gallery-header { max-width: 1200px; margin: 0 auto 48px; }
-        .gallery-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 280px 280px; gap: 12px; }
+        .gallery-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 300px 300px; gap: 12px; }
         .gallery-item { overflow: hidden; border-radius: 2px; position: relative; }
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
         .gallery-item:hover img { transform: scale(1.04); }
@@ -254,11 +254,12 @@ export default function Home() {
           <div className="divider" />
         </div>
         <div className="gallery-grid">
-          <div className="gallery-item tall"><img src="/photos/gallery1.jpg" alt="Vatican City" /><div className="gallery-caption">Vatican City, Rome</div></div>
-          <div className="gallery-item"><img src="/photos/gallery2.jpg" alt="Las Vegas" /><div className="gallery-caption">Las Vegas Strip</div></div>
-          <div className="gallery-item"><img src="/photos/gallery3.jpg" alt="Kentucky Derby" /><div className="gallery-caption">Kentucky Derby 2025</div></div>
-          <div className="gallery-item"><img src="/photos/gallery4.jpg" alt="Caribbean" /><div className="gallery-caption">Caribbean</div></div>
-          <div className="gallery-item"><img src="/photos/lifestyle1.jpg" alt="Justin and Casondra" /><div className="gallery-caption">Always an Adventure</div></div>
+          <div className="gallery-item tall"><img src="/photos/gallery1.jpg" alt="Caribbean Beach" /><div className="gallery-caption">Caribbean</div></div>
+          <div className="gallery-item"><img src="/photos/gallery2.jpg" alt="Tortola, British Virgin Islands" /><div className="gallery-caption">Tortola, BVI</div></div>
+          <div className="gallery-item"><img src="/photos/gallery3.jpg" alt="Dominican Republic" /><div className="gallery-caption">Dominican Republic</div></div>
+          <div className="gallery-item"><img src="/photos/gallery4.jpg" alt="Scottsdale, Arizona" /><div className="gallery-caption">Scottsdale, Arizona</div></div>
+          <div className="gallery-item"><img src="/photos/gallery5.jpg" alt="Rome, Italy" /><div className="gallery-caption">Rome, Italy</div></div>
+          <div className="gallery-item"><img src="/photos/gallery6.jpg" alt="St. Thomas, USVI" /><div className="gallery-caption">St. Thomas, USVI</div></div>
         </div>
       </section>
 
@@ -290,7 +291,7 @@ export default function Home() {
           <div className="divider" />
         </div>
         <div className="lifestyle-grid">
-          <img src="/photos/rome_cafe.jpg" alt="Justin and Casondra in Rome" className="lifestyle-img" />
+          <img src="/photos/lifestyle1.jpg" alt="Justin and Casondra Lamb" className="lifestyle-img" />
           <div className="lifestyle-text">
             <div className="quote">"The world is a book, and those who do not travel read only one page."</div>
             <p>We started The Roaming Lamb Travel Co. because we kept hearing the same thing from friends and family: "I want to travel more, I just don't know where to start."</p>
