@@ -114,10 +114,13 @@ export default function Home() {
         .about-gold-box { background: #C8A84B; color: #fff; padding: 20px 28px; margin-top: 32px; border-radius: 2px; font-size: 15px; line-height: 1.6; font-style: italic; font-family: 'Playfair Display', serif; }
         .about-text p { font-size: 16px; line-height: 1.8; color: #4A5568; margin-bottom: 16px; }
         .about-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
-        .photo-strip { display: flex; height: 320px; overflow: hidden; }
-        .photo-strip-item { flex: 1; overflow: hidden; position: relative; }
-        .photo-strip-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: brightness(0.85); }
-        .photo-strip-item:hover img { transform: scale(1.06); filter: brightness(1); }
+        .photo-strip { overflow: hidden; height: 300px; position: relative; }
+        .photo-strip-track { display: flex; height: 100%; animation: scrollStrip 40s linear infinite; width: max-content; }
+        .photo-strip-track:hover { animation-play-state: paused; }
+        @keyframes scrollStrip { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .photo-strip-item { width: 320px; flex-shrink: 0; overflow: hidden; position: relative; margin-right: 4px; }
+        .photo-strip-item img { width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s; filter: brightness(0.85); }
+        .photo-strip-item:hover img { filter: brightness(1); }
         .dest-grid { max-width: 1200px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
         .dest-card { position: relative; height: 340px; overflow: hidden; border-radius: 4px; cursor: pointer; }
         .dest-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: brightness(0.75); }
@@ -258,12 +261,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Photo Strip */}
+      {/* Scrolling Photo Strip */}
       <div className="photo-strip">
-        <div className="photo-strip-item"><img src="/photos/strip1.jpg" alt="Sloth encounter" /></div>
-        <div className="photo-strip-item"><img src="/photos/strip2.jpg" alt="Icebar" /></div>
-        <div className="photo-strip-item"><img src="/photos/strip3.jpg" alt="Caribbean boat" /></div>
-        <div className="photo-strip-item"><img src="/photos/strip4.jpg" alt="In flight sunset" /></div>
+        <div className="photo-strip-track">
+          {[
+            {src:'/photos/strip1.jpg', alt:'Sloth encounter'},
+            {src:'/photos/strip2.jpg', alt:'Icebar'},
+            {src:'/photos/strip3.jpg', alt:'Caribbean boat'},
+            {src:'/photos/scroll1.jpg', alt:'Sea lion'},
+            {src:'/photos/scroll2.jpg', alt:'Tortola BVI'},
+            {src:'/photos/scroll3.jpg', alt:'Barcelona'},
+            {src:'/photos/scroll4.jpg', alt:'Rome'},
+            {src:'/photos/scroll5.jpg', alt:'Philadelphia'},
+            {src:'/photos/scroll6.jpg', alt:'Christmas market'},
+            {src:'/photos/scroll7.jpg', alt:'Pig beach'},
+            {src:'/photos/scroll8.jpg', alt:'Adventure'},
+            // Duplicate set for seamless loop
+            {src:'/photos/strip1.jpg', alt:'Sloth encounter'},
+            {src:'/photos/strip2.jpg', alt:'Icebar'},
+            {src:'/photos/strip3.jpg', alt:'Caribbean boat'},
+            {src:'/photos/scroll1.jpg', alt:'Sea lion'},
+            {src:'/photos/scroll2.jpg', alt:'Tortola BVI'},
+            {src:'/photos/scroll3.jpg', alt:'Barcelona'},
+            {src:'/photos/scroll4.jpg', alt:'Rome'},
+            {src:'/photos/scroll5.jpg', alt:'Philadelphia'},
+            {src:'/photos/scroll6.jpg', alt:'Christmas market'},
+            {src:'/photos/scroll7.jpg', alt:'Pig beach'},
+            {src:'/photos/scroll8.jpg', alt:'Adventure'},
+          ].map((p, i) => (
+            <div key={i} className="photo-strip-item">
+              <img src={p.src} alt={p.alt} />
+            </div>
+          ))}
+        </div>
       </div>
 
       <section id="destinations" className="gallery-section">
