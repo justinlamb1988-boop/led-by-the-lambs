@@ -260,11 +260,10 @@ export default function Home() {
 
       {/* Photo Strip */}
       <div className="photo-strip">
-        <div className="photo-strip-item"><img src="/photos/strip1.jpg" alt="Barcelona" /></div>
-        <div className="photo-strip-item"><img src="/photos/gallery1.jpg" alt="Caribbean" /></div>
-        <div className="photo-strip-item"><img src="/photos/strip2.jpg" alt="In flight" /></div>
-        <div className="photo-strip-item"><img src="/photos/strip3.jpg" alt="Sea lion encounter" /></div>
-        <div className="photo-strip-item"><img src="/photos/gallery5.jpg" alt="Rome" /></div>
+        <div className="photo-strip-item"><img src="/photos/strip1.jpg" alt="Sloth encounter" /></div>
+        <div className="photo-strip-item"><img src="/photos/strip2.jpg" alt="Icebar" /></div>
+        <div className="photo-strip-item"><img src="/photos/strip3.jpg" alt="Caribbean boat" /></div>
+        <div className="photo-strip-item"><img src="/photos/strip4.jpg" alt="In flight sunset" /></div>
       </div>
 
       <section id="destinations" className="gallery-section">
@@ -279,7 +278,7 @@ export default function Home() {
           <div className="dest-card"><img src="/photos/gallery4.jpg" alt="Scottsdale, Arizona" /><div className="dest-card-label"><div className="dest-card-title">Scottsdale</div><div className="dest-card-sub">Arizona</div></div></div>
           <div className="dest-card"><img src="/photos/dest-nyc.jpg" alt="New York City" /><div className="dest-card-label"><div className="dest-card-title">New York City</div><div className="dest-card-sub">New York</div></div></div>
           <div className="dest-card"><img src="/photos/dest-derby.jpg" alt="Kentucky Derby" /><div className="dest-card-label"><div className="dest-card-title">Kentucky Derby</div><div className="dest-card-sub">Louisville, Kentucky</div></div></div>
-          <div className="dest-card"><img src="/photos/dest-philly.jpg" alt="Philadelphia" /><div className="dest-card-label"><div className="dest-card-title">Philadelphia</div><div className="dest-card-sub">Pennsylvania</div></div></div>
+          <div className="dest-card"><img src="/photos/dest-adventure.jpg" alt="Adventure Awaits" /><div className="dest-card-label"><div className="dest-card-title">Adventure Awaits...</div><div className="dest-card-sub">Where will you go next?</div></div></div>
         </div>
       </section>
 
