@@ -86,7 +86,7 @@ export default function Home() {
           margin-top: 10px;
         }
         .hero { position: relative; height: 100vh; min-height: 700px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-        .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center center; filter: brightness(0.55); }
+        .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center 20%; filter: brightness(0.55); }
         .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 24px; max-width: 820px; }
         .hero-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #C8A84B; margin-bottom: 20px; }
         .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(44px,7vw,80px); font-weight: 600; color: #fff; line-height: 1.1; margin-bottom: 24px; }
