@@ -218,8 +218,8 @@ export default function Home() {
         </div>
         <img src="/photos/logo.png" alt="The Roaming Lamb Travel Co." className="logo-banner-img" />
         <div className="logo-quote">
-          "The world is a book, and those who do not travel read only one page."
-          <span>— Saint Augustine</span>
+          "We travel not to escape life, but for life not to escape us."
+          <span>— Unknown</span>
         </div>
       </div>
       <div className="lamb-accent">
