@@ -54,26 +54,33 @@ export default function Home() {
         .logo-banner {
           background: #0F1E30;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: space-between;
-          gap: 24px;
-          padding: 48px 80px;
+          padding: 48px 80px 40px;
           border-bottom: 2px solid rgba(200,168,75,0.3);
+          gap: 40px;
         }
         .logo-banner-img {
-          width: 260px;
-          height: 260px;
+          width: 340px;
+          height: 340px;
           object-fit: contain;
           flex-shrink: 0;
         }
+        .logo-banner-quotes {
+          display: flex;
+          justify-content: center;
+          gap: 80px;
+          width: 100%;
+          max-width: 1100px;
+        }
         .logo-quote {
           flex: 1;
-          max-width: 500px;
+          max-width: 460px;
           font-family: 'Playfair Display', serif;
-          font-size: 34px;
+          font-size: 26px;
           font-style: italic;
           color: rgba(255,255,255,0.9);
-          line-height: 1.4;
+          line-height: 1.5;
           text-align: center;
         }
         .logo-quote span {
@@ -212,14 +219,16 @@ export default function Home() {
       </nav>
 
       <div className="logo-banner">
-        <div className="logo-quote">
-          "Not all those who wander are lost."
-          <span>— J.R.R. Tolkien</span>
-        </div>
         <img src="/photos/logo.png" alt="The Roaming Lamb Travel Co." className="logo-banner-img" />
-        <div className="logo-quote">
-          "We travel not to escape life, but for life not to escape us."
-          <span>— Unknown</span>
+        <div className="logo-banner-quotes">
+          <div className="logo-quote">
+            "Not all those who wander are lost."
+            <span>— J.R.R. Tolkien</span>
+          </div>
+          <div className="logo-quote">
+            "We travel not to escape life, but for life not to escape us."
+            <span>— Unknown</span>
+          </div>
         </div>
       </div>
       <div className="lamb-accent">
