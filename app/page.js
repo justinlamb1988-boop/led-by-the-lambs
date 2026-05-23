@@ -86,7 +86,7 @@ export default function Home() {
           margin-top: 10px;
         }
         .hero { position: relative; height: 100vh; min-height: 700px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-        .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center 30%; filter: brightness(0.55); }
+        .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center 40%; filter: brightness(0.55); }
         .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 24px; max-width: 820px; }
         .hero-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #C8A84B; margin-bottom: 20px; }
         .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(44px,7vw,80px); font-weight: 600; color: #fff; line-height: 1.1; margin-bottom: 24px; }
@@ -294,6 +294,10 @@ export default function Home() {
             {src:'/photos/scroll-colosseum-interior.jpg', alt:'Colosseum interior'},
             {src:'/photos/scroll-vatican-dome.jpg', alt:'Vatican dome ceiling'},
             {src:'/photos/scroll-colosseum-couple.jpg', alt:'Colosseum couple'},
+            {src:'/photos/scroll-taliesin-living.jpg', alt:'Taliesin West living room'},
+            {src:'/photos/scroll-taliesin-theater.jpg', alt:'Taliesin West theater'},
+            {src:'/photos/scroll-turtle.jpg', alt:'Turtle'},
+            {src:'/photos/scroll-az-balcony.jpg', alt:'Arizona resort balcony'},
             // Duplicate set for seamless loop
             {src:'/photos/strip1.jpg', alt:'Sloth encounter'},
             {src:'/photos/strip2.jpg', alt:'Icebar'},
@@ -315,6 +319,10 @@ export default function Home() {
             {src:'/photos/scroll-colosseum-interior.jpg', alt:'Colosseum interior'},
             {src:'/photos/scroll-vatican-dome.jpg', alt:'Vatican dome ceiling'},
             {src:'/photos/scroll-colosseum-couple.jpg', alt:'Colosseum couple'},
+            {src:'/photos/scroll-taliesin-living.jpg', alt:'Taliesin West living room'},
+            {src:'/photos/scroll-taliesin-theater.jpg', alt:'Taliesin West theater'},
+            {src:'/photos/scroll-turtle.jpg', alt:'Turtle'},
+            {src:'/photos/scroll-az-balcony.jpg', alt:'Arizona resort balcony'},
           ].map((p, i) => (
             <div key={i} className="photo-strip-item">
               <img src={p.src} alt={p.alt} />
@@ -336,7 +344,7 @@ export default function Home() {
           <div className="dest-card"><img src="/photos/dest-marseille.jpg" alt="Marseille, France" /><div className="dest-card-label"><div className="dest-card-title">Marseille</div><div className="dest-card-sub">France</div></div></div>
           <div className="dest-card"><img src="/photos/dest-sicily.jpg" alt="Sicily, Italy" /><div className="dest-card-label"><div className="dest-card-title">Sicily</div><div className="dest-card-sub">Italy</div></div></div>
           <div className="dest-card"><img src="/photos/dest-nyc.jpg" alt="New York City" /><div className="dest-card-label"><div className="dest-card-title">New York City</div><div className="dest-card-sub">New York</div></div></div>
-          <div className="dest-card"><img src="/photos/gallery4.jpg" alt="Scottsdale, Arizona" /><div className="dest-card-label"><div className="dest-card-title">Scottsdale</div><div className="dest-card-sub">Arizona</div></div></div>
+          <div className="dest-card"><img src="/photos/dest-scottsdale.jpg" alt="Scottsdale, Arizona" /><div className="dest-card-label"><div className="dest-card-title">Scottsdale</div><div className="dest-card-sub">Arizona</div></div></div>
           <div className="dest-card"><img src="/photos/dest-derby.jpg" alt="Kentucky Derby" /><div className="dest-card-label"><div className="dest-card-title">Kentucky Derby</div><div className="dest-card-sub">Louisville, Kentucky</div></div></div>
           <div className="dest-card"><img src="/photos/dest-adventure.jpg" alt="Adventure Awaits" /><div className="dest-card-label"><div className="dest-card-title">Adventure Awaits...</div><div className="dest-card-sub">Where will you go next?</div></div></div>
         </div>
