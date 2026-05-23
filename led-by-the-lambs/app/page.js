@@ -257,9 +257,9 @@ export default function Home() {
             <div className="section-eyebrow">Meet Your Planners</div>
             <h2 className="section-title">We Don't Just Plan Trips.<br /><em>We Live Them.</em></h2>
             <div className="divider" />
-            <p>Hi, we're Justin & Casondra Lamb — a couple from Knoxville, Tennessee who turned a lifelong passion for travel into a personalized trip planning business.</p>
+            <p>Hi, we're Justin & Casondra Lamb — a couple from Knoxville, Tennessee who turned a lifelong passion for travel into a personalized travel planning business.</p>
             <p>From the cobblestone streets of Rome to the Mediterranean coast, from Times Square to the Las Vegas Strip — we've experienced it firsthand. That's exactly what we bring to every trip we plan for you.</p>
-            <p>Combining years of experience in customer service and hospitality, we believe travel should be effortless, memorable, and deeply personal. We handle every detail — flights, hotels, experiences, reservations — so you can focus on what travel is all about... making memories.</p>
+            <p>Combining years of customer service and hospitality experience, we believe travel should be effortless, memorable, and deeply personal. We handle every detail — flights, hotels, experiences, reservations — so you can focus on what travel is all about...making memories.</p>
             <div className="about-tags">
               {['Rome & Amalfi Coast','Mediterranean Cruise','Barcelona','Las Vegas','New York City','Caribbean'].map(t => (
                 <span key={t} className="tag">{t}</span>
@@ -298,6 +298,7 @@ export default function Home() {
             {src:'/photos/scroll-taliesin-theater.jpg', alt:'Taliesin West theater'},
             {src:'/photos/scroll-turtle.jpg', alt:'Turtle'},
             {src:'/photos/scroll-az-balcony.jpg', alt:'Arizona resort balcony'},
+            {src:'/photos/scroll-barcelona-beer.jpg', alt:'Barcelona beer'},
             // Duplicate set for seamless loop
             {src:'/photos/strip1.jpg', alt:'Sloth encounter'},
             {src:'/photos/strip2.jpg', alt:'Icebar'},
@@ -323,6 +324,7 @@ export default function Home() {
             {src:'/photos/scroll-taliesin-theater.jpg', alt:'Taliesin West theater'},
             {src:'/photos/scroll-turtle.jpg', alt:'Turtle'},
             {src:'/photos/scroll-az-balcony.jpg', alt:'Arizona resort balcony'},
+            {src:'/photos/scroll-barcelona-beer.jpg', alt:'Barcelona beer'},
           ].map((p, i) => (
             <div key={i} className="photo-strip-item">
               <img src={p.src} alt={p.alt} />
