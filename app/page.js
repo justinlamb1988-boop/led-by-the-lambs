@@ -86,7 +86,7 @@ export default function Home() {
           margin-top: 10px;
         }
         .hero { position: relative; height: 100vh; min-height: 700px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-        .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center 20%; filter: brightness(0.55); }
+        .hero-bg { position: absolute; inset: 0; background-image: url('/photos/hero.jpg'); background-size: cover; background-position: center 30%; filter: brightness(0.55); }
         .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 24px; max-width: 820px; }
         .hero-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #C8A84B; margin-bottom: 20px; }
         .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(44px,7vw,80px); font-weight: 600; color: #fff; line-height: 1.1; margin-bottom: 24px; }
@@ -122,6 +122,9 @@ export default function Home() {
         .photo-strip-item img { width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s; filter: brightness(0.85); }
         .photo-strip-item:hover img { filter: brightness(1); }
         .dest-grid { max-width: 1200px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .lamb-accent { display: flex; align-items: center; justify-content: center; gap: 20px; padding: 24px 48px; background: #0F1E30; border-top: 1px solid rgba(200,168,75,0.2); }
+        .lamb-accent img { width: 80px; height: 80px; object-fit: cover; border-radius: 50%; opacity: 0.85; border: 2px solid rgba(200,168,75,0.4); }
+        .lamb-accent-text { font-family: 'Playfair Display', serif; font-size: 13px; font-style: italic; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }
         .dest-card { position: relative; height: 340px; overflow: hidden; border-radius: 4px; cursor: pointer; }
         .dest-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: brightness(0.75); }
         .dest-card:hover img { transform: scale(1.06); filter: brightness(0.9); }
@@ -139,7 +142,7 @@ export default function Home() {
         .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%); padding: 20px 16px 14px; color: rgba(255,255,255,0.9); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
         .why-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 48px; }
         .why-item { text-align: center; }
-        .why-icon { width: 64px; height: 64px; border-radius: 50%; background: #EEF7FF; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 28px; }
+        .why-icon { width: 72px; height: 72px; border-radius: 50%; background: transparent; border: 2px solid #C8A84B; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
         .why-title { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 500; margin-bottom: 12px; }
         .why-text { font-size: 15px; color: #6B8299; line-height: 1.7; }
         .form-section { background: linear-gradient(135deg, #1A4F82 0%, #2C6FAC 100%); padding: 100px 48px; }
@@ -219,6 +222,12 @@ export default function Home() {
           <span>— Saint Augustine</span>
         </div>
       </div>
+      <div className="lamb-accent">
+        <img src="/photos/lamb-carving.jpg" alt="Roaming Lamb carving" />
+        <div className="lamb-accent-text">Found in the Vatican — a roaming lamb, carved in stone.</div>
+        <img src="/photos/lamb-carving.jpg" alt="Roaming Lamb carving" />
+      </div>
+
       <div className="hero">
         <div className="hero-bg" />
         <div className="hero-content">
@@ -270,24 +279,42 @@ export default function Home() {
             {src:'/photos/strip3.jpg', alt:'Caribbean boat'},
             {src:'/photos/scroll1.jpg', alt:'Sea lion'},
             {src:'/photos/scroll2.jpg', alt:'Tortola BVI'},
-            {src:'/photos/scroll3.jpg', alt:'Barcelona'},
-            {src:'/photos/scroll4.jpg', alt:'Rome'},
+            {src:'/photos/scroll3.jpg', alt:'Dominican Republic'},
             {src:'/photos/scroll5.jpg', alt:'Philadelphia'},
             {src:'/photos/scroll6.jpg', alt:'Christmas market'},
             {src:'/photos/scroll7.jpg', alt:'Pig beach'},
             {src:'/photos/scroll8.jpg', alt:'Adventure'},
+            {src:'/photos/scroll-sagrada-blue.jpg', alt:'Sagrada Familia stained glass'},
+            {src:'/photos/scroll-sagrada-orange.jpg', alt:'Sagrada Familia interior'},
+            {src:'/photos/scroll-marseille-church.jpg', alt:'Marseille church interior'},
+            {src:'/photos/scroll-sicily-umbrellas.jpg', alt:'Sicily umbrella street'},
+            {src:'/photos/scroll-marseille-tower.jpg', alt:'Notre-Dame de la Garde'},
+            {src:'/photos/scroll-marseille-selfie.jpg', alt:'Marseille overlook'},
+            {src:'/photos/scroll-med-boat.jpg', alt:'Mediterranean boat'},
+            {src:'/photos/scroll-colosseum-interior.jpg', alt:'Colosseum interior'},
+            {src:'/photos/scroll-vatican-dome.jpg', alt:'Vatican dome ceiling'},
+            {src:'/photos/scroll-colosseum-couple.jpg', alt:'Colosseum couple'},
             // Duplicate set for seamless loop
             {src:'/photos/strip1.jpg', alt:'Sloth encounter'},
             {src:'/photos/strip2.jpg', alt:'Icebar'},
             {src:'/photos/strip3.jpg', alt:'Caribbean boat'},
             {src:'/photos/scroll1.jpg', alt:'Sea lion'},
             {src:'/photos/scroll2.jpg', alt:'Tortola BVI'},
-            {src:'/photos/scroll3.jpg', alt:'Barcelona'},
-            {src:'/photos/scroll4.jpg', alt:'Rome'},
+            {src:'/photos/scroll3.jpg', alt:'Dominican Republic'},
             {src:'/photos/scroll5.jpg', alt:'Philadelphia'},
             {src:'/photos/scroll6.jpg', alt:'Christmas market'},
             {src:'/photos/scroll7.jpg', alt:'Pig beach'},
             {src:'/photos/scroll8.jpg', alt:'Adventure'},
+            {src:'/photos/scroll-sagrada-blue.jpg', alt:'Sagrada Familia stained glass'},
+            {src:'/photos/scroll-sagrada-orange.jpg', alt:'Sagrada Familia interior'},
+            {src:'/photos/scroll-marseille-church.jpg', alt:'Marseille church interior'},
+            {src:'/photos/scroll-sicily-umbrellas.jpg', alt:'Sicily umbrella street'},
+            {src:'/photos/scroll-marseille-tower.jpg', alt:'Notre-Dame de la Garde'},
+            {src:'/photos/scroll-marseille-selfie.jpg', alt:'Marseille overlook'},
+            {src:'/photos/scroll-med-boat.jpg', alt:'Mediterranean boat'},
+            {src:'/photos/scroll-colosseum-interior.jpg', alt:'Colosseum interior'},
+            {src:'/photos/scroll-vatican-dome.jpg', alt:'Vatican dome ceiling'},
+            {src:'/photos/scroll-colosseum-couple.jpg', alt:'Colosseum couple'},
           ].map((p, i) => (
             <div key={i} className="photo-strip-item">
               <img src={p.src} alt={p.alt} />
@@ -303,10 +330,13 @@ export default function Home() {
           <div className="divider" />
         </div>
         <div className="dest-grid">
-          <div className="dest-card"><img src="/photos/gallery5.jpg" alt="Rome, Italy" /><div className="dest-card-label"><div className="dest-card-title">Rome & the Vatican</div><div className="dest-card-sub">Italy</div></div></div>
+          <div className="dest-card"><img src="/photos/dest-rome.jpg" alt="Rome, Italy" /><div className="dest-card-label"><div className="dest-card-title">Rome & the Vatican</div><div className="dest-card-sub">Italy</div></div></div>
           <div className="dest-card"><img src="/photos/gallery1.jpg" alt="Caribbean" /><div className="dest-card-label"><div className="dest-card-title">Caribbean Islands</div><div className="dest-card-sub">BVI · USVI · Dominican Republic</div></div></div>
-          <div className="dest-card"><img src="/photos/gallery4.jpg" alt="Scottsdale, Arizona" /><div className="dest-card-label"><div className="dest-card-title">Scottsdale</div><div className="dest-card-sub">Arizona</div></div></div>
+          <div className="dest-card"><img src="/photos/dest-barcelona.jpg" alt="Barcelona, Spain" /><div className="dest-card-label"><div className="dest-card-title">Barcelona</div><div className="dest-card-sub">Spain</div></div></div>
+          <div className="dest-card"><img src="/photos/dest-marseille.jpg" alt="Marseille, France" /><div className="dest-card-label"><div className="dest-card-title">Marseille</div><div className="dest-card-sub">France</div></div></div>
+          <div className="dest-card"><img src="/photos/dest-sicily.jpg" alt="Sicily, Italy" /><div className="dest-card-label"><div className="dest-card-title">Sicily</div><div className="dest-card-sub">Italy</div></div></div>
           <div className="dest-card"><img src="/photos/dest-nyc.jpg" alt="New York City" /><div className="dest-card-label"><div className="dest-card-title">New York City</div><div className="dest-card-sub">New York</div></div></div>
+          <div className="dest-card"><img src="/photos/gallery4.jpg" alt="Scottsdale, Arizona" /><div className="dest-card-label"><div className="dest-card-title">Scottsdale</div><div className="dest-card-sub">Arizona</div></div></div>
           <div className="dest-card"><img src="/photos/dest-derby.jpg" alt="Kentucky Derby" /><div className="dest-card-label"><div className="dest-card-title">Kentucky Derby</div><div className="dest-card-sub">Louisville, Kentucky</div></div></div>
           <div className="dest-card"><img src="/photos/dest-adventure.jpg" alt="Adventure Awaits" /><div className="dest-card-label"><div className="dest-card-title">Adventure Awaits...</div><div className="dest-card-sub">Where will you go next?</div></div></div>
         </div>
@@ -320,9 +350,9 @@ export default function Home() {
         </div>
         <div className="why-grid">
           {[
-            {icon:'✈️', title:"We've Been There", text:"Every destination we recommend is one we've personally explored. No guessing, no generic itineraries — just real, firsthand knowledge."},
-            {icon:'🎯', title:'Tailored to You', text:"No two trips are the same. We take the time to understand your style, budget, and bucket list before crafting a single recommendation."},
-            {icon:'🤝', title:'Full White-Glove Service', text:'From flights and hotels to dining reservations and day trips — we handle every detail from start to finish so you can just enjoy.'},
+            {icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#C8A84B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 26L14 18M26 6l-8 8M20 6h6v6M12 26H6v-6"/><circle cx="16" cy="16" r="3"/></svg>, title:"We've Been There", text:"Every destination we recommend is one we've personally explored. No guessing, no generic itineraries — just real, firsthand knowledge."},
+            {icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#C8A84B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 4C9.4 4 4 9.4 4 16s5.4 12 12 12 12-5.4 12-12S22.6 4 16 4z"/><path d="M16 10v6l4 2"/></svg>, title:'Tailored to You', text:"No two trips are the same. We take the time to understand your style, budget, and bucket list before crafting a single recommendation."},
+            {icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#C8A84B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 4l2.5 7.5H26l-6.5 4.5 2.5 7.5L16 19l-6 4.5 2.5-7.5L6 11.5h7.5z"/></svg>, title:'Full White-Glove Service', text:'From flights and hotels to dining reservations and day trips — we handle every detail from start to finish so you can just enjoy.'},
           ].map(w => (
             <div key={w.title} className="why-item">
               <div className="why-icon">{w.icon}</div>
