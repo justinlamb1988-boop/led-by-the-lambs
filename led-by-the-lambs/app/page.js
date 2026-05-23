@@ -68,12 +68,12 @@ export default function Home() {
         }
         .logo-quote {
           flex: 1;
-          max-width: 460px;
+          max-width: 500px;
           font-family: 'Playfair Display', serif;
-          font-size: 26px;
+          font-size: 34px;
           font-style: italic;
           color: rgba(255,255,255,0.9);
-          line-height: 1.5;
+          line-height: 1.4;
           text-align: center;
         }
         .logo-quote span {
@@ -122,9 +122,9 @@ export default function Home() {
         .photo-strip-item img { width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s; filter: brightness(0.85); }
         .photo-strip-item:hover img { filter: brightness(1); }
         .dest-grid { max-width: 1200px; margin: 48px auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-        .lamb-accent { display: flex; align-items: center; justify-content: center; gap: 32px; padding: 32px 48px; background: #0F1E30; border-top: 1px solid rgba(200,168,75,0.2); }
-        .lamb-accent img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; opacity: 0.85; border: 2px solid rgba(200,168,75,0.4); }
-        .lamb-accent-text { font-family: 'Playfair Display', serif; font-size: 18px; font-style: italic; color: rgba(255,255,255,0.7); letter-spacing: 0.05em; }
+        .lamb-accent { display: flex; align-items: center; justify-content: center; gap: 48px; padding: 48px; background: #0F1E30; border-top: 1px solid rgba(200,168,75,0.2); }
+        .lamb-accent img { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; opacity: 0.85; border: 2px solid rgba(200,168,75,0.4); }
+        .lamb-accent-text { font-family: 'Playfair Display', serif; font-size: 24px; font-style: italic; color: rgba(255,255,255,0.75); letter-spacing: 0.05em; }
         .dest-card { position: relative; height: 340px; overflow: hidden; border-radius: 4px; cursor: pointer; }
         .dest-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; filter: brightness(0.75); }
         .dest-card:hover img { transform: scale(1.06); filter: brightness(0.9); }
@@ -257,11 +257,11 @@ export default function Home() {
             <div className="section-eyebrow">Meet Your Planners</div>
             <h2 className="section-title">We Don't Just Plan Trips.<br /><em>We Live Them.</em></h2>
             <div className="divider" />
-            <p>Hi, we're Justin & Casondra Lamb — a couple from Knoxville, Tennessee who turned a lifelong passion for travel into a boutique planning business.</p>
-            <p>From the cobblestone streets of Rome to the Mediterranean coast, from the Kentucky Derby to the Las Vegas Strip — we've experienced it firsthand. That's exactly what we bring to every trip we plan for you.</p>
-            <p>We believe travel should be effortless, memorable, and deeply personal. We handle every detail — flights, hotels, experiences, reservations — so you can focus on making memories.</p>
+            <p>Hi, we're Justin & Casondra Lamb — a couple from Knoxville, Tennessee who turned a lifelong passion for travel into a personalized trip planning business.</p>
+            <p>From the cobblestone streets of Rome to the Mediterranean coast, from Times Square to the Las Vegas Strip — we've experienced it firsthand. That's exactly what we bring to every trip we plan for you.</p>
+            <p>Combining years of experience in customer service and hospitality, we believe travel should be effortless, memorable, and deeply personal. We handle every detail — flights, hotels, experiences, reservations — so you can focus on what travel is all about... making memories.</p>
             <div className="about-tags">
-              {['Rome & Amalfi Coast','Mediterranean Cruise','Barcelona','Las Vegas','New York City','Caribbean','Kentucky Derby'].map(t => (
+              {['Rome & Amalfi Coast','Mediterranean Cruise','Barcelona','Las Vegas','New York City','Caribbean'].map(t => (
                 <span key={t} className="tag">{t}</span>
               ))}
             </div>
