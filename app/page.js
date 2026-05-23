@@ -257,11 +257,11 @@ export default function Home() {
             <div className="section-eyebrow">Meet Your Planners</div>
             <h2 className="section-title">We Don't Just Plan Trips.<br /><em>We Live Them.</em></h2>
             <div className="divider" />
-            <p>Hi, we're Justin & Casondra Lamb — a couple from Knoxville, Tennessee who turned a lifelong passion for travel into a boutique planning business.</p>
-            <p>From the cobblestone streets of Rome to the Mediterranean coast, from the Kentucky Derby to the Las Vegas Strip — we've experienced it firsthand. That's exactly what we bring to every trip we plan for you.</p>
-            <p>We believe travel should be effortless, memorable, and deeply personal. We handle every detail — flights, hotels, experiences, reservations — so you can focus on making memories.</p>
+            <p>Hi, we're Justin & Casondra Lamb — a couple from Knoxville, Tennessee who turned a lifelong passion for travel into a personalized travel planning business.</p>
+            <p>From the cobblestone streets of Rome to the Mediterranean coast, from Times Square to the Las Vegas Strip — we've experienced it firsthand. That's exactly what we bring to every trip we plan for you.</p>
+            <p>Combining years of customer service and hospitality experience, we believe travel should be effortless, memorable, and deeply personal. We handle every detail — flights, hotels, experiences, reservations — so you can focus on what travel is all about...making memories.</p>
             <div className="about-tags">
-              {['Rome & Amalfi Coast','Mediterranean Cruise','Barcelona','Las Vegas','New York City','Caribbean','Kentucky Derby'].map(t => (
+              {['Rome & Amalfi Coast','Mediterranean Cruise','Barcelona','Las Vegas','New York City','Caribbean'].map(t => (
                 <span key={t} className="tag">{t}</span>
               ))}
             </div>
