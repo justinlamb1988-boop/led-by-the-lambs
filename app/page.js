@@ -68,11 +68,11 @@ export default function Home() {
         }
         .logo-banner-quotes {
           display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 32px;
+          flex-direction: row;
+          justify-content: center;
+          gap: 80px;
           width: 100%;
-          max-width: 600px;
+          max-width: 1100px;
         }
         .logo-quote {
           font-family: 'Playfair Display', serif;
