@@ -451,7 +451,7 @@ export default function Home() {
       <footer>
         <div>
           <div className="footer-logo"><img src="/photos/logo-nav.png" alt="The Roaming Lamb Travel Co." /><div className="footer-logo-text">The Roaming <span>Lamb</span><br/>Travel Co.</div></div>
-          <div className="footer-tagline">It's about Lamb time.</div>
+          <div className="footer-tagline">Independent Travel Advisor of Fora Travel</div>
         </div>
         <div className="footer-links">
           <a onClick={() => scrollTo('about')}>About</a>
