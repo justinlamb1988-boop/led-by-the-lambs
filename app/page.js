@@ -54,26 +54,32 @@ export default function Home() {
         .logo-banner {
           background: #0F1E30;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: space-between;
-          gap: 24px;
-          padding: 48px 80px;
+          padding: 48px 80px 40px;
           border-bottom: 2px solid rgba(200,168,75,0.3);
+          gap: 40px;
         }
         .logo-banner-img {
-          width: 260px;
-          height: 260px;
+          width: 340px;
+          height: 340px;
           object-fit: contain;
           flex-shrink: 0;
         }
+        .logo-banner-quotes {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 32px;
+          width: 100%;
+          max-width: 600px;
+        }
         .logo-quote {
-          flex: 1;
-          max-width: 500px;
           font-family: 'Playfair Display', serif;
-          font-size: 34px;
+          font-size: 26px;
           font-style: italic;
           color: rgba(255,255,255,0.9);
-          line-height: 1.4;
+          line-height: 1.5;
           text-align: center;
         }
         .logo-quote span {
@@ -212,16 +218,19 @@ export default function Home() {
       </nav>
 
       <div className="logo-banner">
-        <div className="logo-quote">
-          "Not all those who wander are lost."
-          <span>— J.R.R. Tolkien</span>
-        </div>
         <img src="/photos/logo.png" alt="The Roaming Lamb Travel Co." className="logo-banner-img" />
-        <div className="logo-quote">
-          "We travel not to escape life, but for life not to escape us."
-          <span>— Unknown</span>
+        <div className="logo-banner-quotes">
+          <div className="logo-quote">
+            "Not all those who wander are lost."
+            <span>— J.R.R. Tolkien</span>
+          </div>
+          <div className="logo-quote">
+            "We travel not to escape life, but for life not to escape us."
+            <span>— Unknown</span>
+          </div>
         </div>
       </div>
+
       <div className="lamb-accent">
         <img src="/photos/lamb-carving.jpg" alt="Roaming Lamb carving" />
         <div className="lamb-accent-text">Found in the Vatican — a roaming lamb, carved in stone.</div>
@@ -270,7 +279,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Scrolling Photo Strip */}
       <div className="photo-strip">
         <div className="photo-strip-track">
           {[
@@ -283,7 +291,7 @@ export default function Home() {
             {src:'/photos/scroll5.jpg', alt:'Philadelphia'},
             {src:'/photos/scroll6.jpg', alt:'Christmas market'},
             {src:'/photos/scroll7.jpg', alt:'Pig beach'},
-            {src:'/photos/scroll8.jpg', alt:'Adventure'},
+            {src:'/photos/scroll8.jpg', alt:'Pig at table'},
             {src:'/photos/scroll-sagrada-blue.jpg', alt:'Sagrada Familia stained glass'},
             {src:'/photos/scroll-sagrada-orange.jpg', alt:'Sagrada Familia interior'},
             {src:'/photos/scroll-marseille-church.jpg', alt:'Marseille church interior'},
@@ -298,6 +306,13 @@ export default function Home() {
             {src:'/photos/scroll-taliesin-theater.jpg', alt:'Taliesin West theater'},
             {src:'/photos/scroll-turtle.jpg', alt:'Turtle'},
             {src:'/photos/scroll-az-balcony.jpg', alt:'Arizona resort balcony'},
+            {src:'/photos/scroll-barcelona-beer.jpg', alt:'Casondra Barcelona beer'},
+            {src:'/photos/scroll-justin-beer.jpg', alt:'Justin Barcelona beer'},
+            {src:'/photos/scroll-diamondbacks.jpg', alt:'Diamondbacks game'},
+            {src:'/photos/scroll-florence-selfie.jpg', alt:'Florence overlook selfie'},
+            {src:'/photos/scroll-casa-batllo.jpg', alt:'Casa Batllo Barcelona'},
+            {src:'/photos/scroll-chateau-if.jpg', alt:'Chateau d\'If Marseille'},
+            {src:'/photos/scroll-vatican-frescoes.jpg', alt:'Vatican frescoes'},
             // Duplicate set for seamless loop
             {src:'/photos/strip1.jpg', alt:'Sloth encounter'},
             {src:'/photos/strip2.jpg', alt:'Icebar'},
@@ -308,7 +323,7 @@ export default function Home() {
             {src:'/photos/scroll5.jpg', alt:'Philadelphia'},
             {src:'/photos/scroll6.jpg', alt:'Christmas market'},
             {src:'/photos/scroll7.jpg', alt:'Pig beach'},
-            {src:'/photos/scroll8.jpg', alt:'Adventure'},
+            {src:'/photos/scroll8.jpg', alt:'Pig at table'},
             {src:'/photos/scroll-sagrada-blue.jpg', alt:'Sagrada Familia stained glass'},
             {src:'/photos/scroll-sagrada-orange.jpg', alt:'Sagrada Familia interior'},
             {src:'/photos/scroll-marseille-church.jpg', alt:'Marseille church interior'},
@@ -323,6 +338,13 @@ export default function Home() {
             {src:'/photos/scroll-taliesin-theater.jpg', alt:'Taliesin West theater'},
             {src:'/photos/scroll-turtle.jpg', alt:'Turtle'},
             {src:'/photos/scroll-az-balcony.jpg', alt:'Arizona resort balcony'},
+            {src:'/photos/scroll-barcelona-beer.jpg', alt:'Casondra Barcelona beer'},
+            {src:'/photos/scroll-justin-beer.jpg', alt:'Justin Barcelona beer'},
+            {src:'/photos/scroll-diamondbacks.jpg', alt:'Diamondbacks game'},
+            {src:'/photos/scroll-florence-selfie.jpg', alt:'Florence overlook selfie'},
+            {src:'/photos/scroll-casa-batllo.jpg', alt:'Casa Batllo Barcelona'},
+            {src:'/photos/scroll-chateau-if.jpg', alt:'Chateau d\'If Marseille'},
+            {src:'/photos/scroll-vatican-frescoes.jpg', alt:'Vatican frescoes'},
           ].map((p, i) => (
             <div key={i} className="photo-strip-item">
               <img src={p.src} alt={p.alt} />
